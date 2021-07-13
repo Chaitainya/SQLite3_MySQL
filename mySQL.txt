@@ -1,0 +1,18 @@
+!pip install mysql-connector-python
+
+Requirement already satisfied: mysql-connector-python in c:\users\leonr\anaconda3\lib\site-packages (8.0.23)
+Collecting protobuf>=3.0.0
+  Downloading protobuf-3.14.0-py2.py3-none-any.whl (173 kB)
+Requirement already satisfied: six>=1.9 in c:\users\leonr\anaconda3\lib\site-packages (from protobuf>=3.0.0->mysql-connector-python) (1.15.0)
+Installing collected packages: protobuf
+Successfully installed protobuf-3.14.0
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host = "localhost", user = "root", password = "password")
+
+print(mydb)
+<mysql.connector.connection_cext.CMySQLConnection object at 0x00000216D7D34760>
+
+mycursor = mydb.cursor()
+mycursor.execute("create database mydatabase")
