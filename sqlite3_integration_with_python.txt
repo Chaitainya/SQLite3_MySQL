@@ -1,0 +1,12 @@
+sqlite3 is package which is available in Python. If Python is installed, automatically sqlite3 must be installed. It'll come along with Python.
+import sqlite3
+
+# If the database is not exists in the local machine, it'll automatically create the
+# database in the local machine.
+
+connection = sqlite3.connect('DigitalLync.db')
+# db means we're asking to create a database in local machine.
+
+print("opened database successfully")
+opened database successfully
+import sqlite3 connection = sqlite3.connect('database_name.db') print("opened database successfully")
